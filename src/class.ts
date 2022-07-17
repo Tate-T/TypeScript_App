@@ -8,7 +8,7 @@ class House {
     //     this.type = t;
     // }
 
-    constructor (private type: string, private street: string) {
+    constructor (private readonly type: string, private street: string) {
         
     }
 
