@@ -1,5 +1,5 @@
 interface IPerson {
-    name: string;
+   readonly name: string;
     age: number;
 
     greet(phrase: string): void;
@@ -12,9 +12,9 @@ user = {
     age: 221,
 
     greet (phrase: string) {
-        console.log(phrase + '' + this.name);
+        console.log(phrase + ' ' + this.name);
 
     }
 }
 
-user.greet('Привіт')
+user.greet('Привіт ')
